@@ -1,0 +1,92 @@
+/* Scoped About Us Page Content Styles */
+
+/* About Us Page Specific Styles */
+.about-us-page .columns-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.about-us-page .column {
+    flex: 1 1 45%;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.about-us-page .about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-page .about-content .column-text {
+    flex: 1;
+}
+
+.about-us-page .about-content .column-image {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.about-us-page .about-content .column-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    .about-us-page .columns-section {
+        flex-direction: column;
+    }
+
+    .about-us-page .column {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .about-us-page .about-content {
+        flex-direction: column;
+    }
+
+    .about-us-page .about-content .column-text {
+        padding-bottom: 20px;
+    }
+
+    .about-us-page .about-content .column-image {
+        padding-left: 0;
+    }
+}
+/* Get a Quote Button Styling */
+.about-us-page .get-quote-btn {
+    display: inline-block;
+    padding: 12px 25px;  /* Increase padding for a better click area */
+    background-color: #1A43BF; /* Button color */
+    color: white; /* Button text color */
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;  /* Remove underline */
+    border-radius: 5px;  /* Rounded corners */
+    transition: all 0.3s ease;
+    text-align: center;  /* Ensure the text is centered */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
+    margin-top: 20px;  /* Space above button */
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.about-us-page .get-quote-btn:hover {
+    background-color: #00072D;  /* Darker color on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  /* Bigger shadow */
+}
+
+/* Mobile View Adjustments */
+@media only screen and (max-width: 768px) {
+    .about-us-page .get-quote-btn {
+        font-size: 1em;  /* Slightly smaller text on mobile */
+        padding: 10px 20px;  /* Adjust padding for smaller screens */
+        width: 100%;  /* Full width on small screens */
+    }
+}
