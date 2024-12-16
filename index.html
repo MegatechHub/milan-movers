@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Milan Movers & Logistics provides efficient, reliable, and affordable moving services in Kenya. From household moves to corporate relocations, we deliver perfect logistics solutions tailored to your needs.">
+    <meta name="keywords" content="movers in Kenya, logistics services, corporate moves, household moves, cleaning services, decluttering services">
+    <meta name="author" content="Milan Movers & Logistics">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Milan Movers & Logistics | Perfect Logistics Solutions">
+    <meta property="og:description" content="Efficient and reliable moving services tailored for your needs. Contact us today!">
+    <meta property="og:image" content="Images/MILAN_LOGO Transparent.png">
+    <meta property="og:url" content="https://milanmovers.co.ke">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Milan Movers & Logistics | Perfect Logistics Solutions">
+    <meta name="twitter:description" content="Efficient and reliable moving services tailored for your needs. Contact us today!">
+    <meta name="twitter:image" content="Images/MILAN_LOGO Transparent.png">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MovingCompany",
+            "name": "Milan Movers & Logistics",
+            "url": "https://milanmovers.co.ke",
+            "logo": "https://milanmovers.co.ke/Images/MILAN_LOGO Transparent.png",
+            "description": "Efficient and reliable moving services tailored for your needs.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Embu",
+                "addressCountry": "KE"
+            },
+            "telephone": "+254795001646",
+            "email": "info@milanmovers.co.ke"
+        }
+    </script>
+
+    <title>Milan Movers & Logistics | Perfect Logistics Solutions</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body> 
+    <header>
+        <div class="logo-container">
+            <img src="Images/MILAN_LOGO Transparent.png" alt="Milan Movers Logo">
+            <div class="logo-text">Milan Movers & Logistics</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#quote-form" class="btn">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="Images/MILAN Movers and Logistics Hero Image.webp" alt="Hero Image" class="hero-image" loading="lazy">
+        <div class="hero-content">
+            <h1>Welcome to Milan Movers & Logistics</h1>
+            <p>Your Perfect Logistics Solutions<br>+254 795 001646</p>
+            <a href="#quote-form" class="btn">Get a Quote</a>
+        </div>
+    </div>
+    
+    <!-- Our Services Section -->
+<section id="our-services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="service-item">
+            <img src="images/Milan Movers and Logistics.jpg" alt="Household Moves" loading="lazy">
+            <h3>Household Moves</h3>
+            <p>We provide efficient and reliable moving services for your household items.</p>
+        </div>
+        <div class="service-item">
+            <img src="Images/Milan Movers Packaging.jpg" alt="Corporate Moves" loading="lazy">
+            <h3>Corporate Moves</h3>
+            <p>Our team ensures smooth office relocations with minimal downtime.</p>
+        </div>
+        <div class="service-item">
+            <img src="Images/Milan Movers Cleaning Services.jpg" alt="Cleaning Services" loading="lazy">
+            <h3>Cleaning Services</h3>
+            <p>We offer professional cleaning for homes and offices, ensuring a spotless space.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/Milan Movers Decluttering Services.jpg" alt="Decluttering Services" loading="lazy">
+            <h3>Decluttering Services</h3>
+            <p>We help you organize and declutter your space for a more efficient environment.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <ul>
+            <li>Experienced Team</li>
+            <li>Affordable Pricing</li>
+            <li>Timely and Reliable</li>
+            <li>Customer-Focused Approach</li>
+        </ul>
+    </section>
+
+    <section id="quote-form">
+        <h2>Request a Quote</h2>
+        <form action="mailto:info@milanmovers.co.ke" method="post" enctype="text/plain">
+            <label for="full-name">Full Name <span style="color: red;">*</span></label>
+            <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+    
+            <label for="phone-number">Phone Number <span style="color: red;">*</span></label>
+            <input type="tel" id="phone-number" name="phone-number" required placeholder="Enter your phone number">
+    
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+            <!-- Dropdown for selecting service -->
+            <label for="service">Select Service <span style="color: red;">*</span></label>
+            <select id="service" name="service" required onchange="toggleLocationFields()">
+                <option value="">Please select a service</option>
+                <option value="Household Move">Household Move</option>
+                <option value="Corporate/Office Move">Corporate/Office Move</option>
+                <option value="Cleaning Services">Cleaning Services</option>
+                <option value="Decluttering Services">Decluttering Services</option>
+            </select>
+    
+            <!-- Moving From (only required for Household and Corporate/Office Move) -->
+            <label for="moving-from" id="moving-from-label">Moving From <span style="color: red;">*</span></label>
+            <input type="text" id="moving-from" name="moving-from" placeholder="Enter current location">
+    
+            <!-- Moving To (only required for Household and Corporate/Office Move) -->
+            <label for="moving-to" id="moving-to-label">Moving To <span style="color: red;">*</span></label>
+            <input type="text" id="moving-to" name="moving-to" placeholder="Enter destination location">
+    
+            <!-- Moving Date (only required for Household and Corporate/Office Move) -->
+            <label for="moving-date" id="moving-date-label">Moving Date <span style="color: red;">*</span></label>
+            <input type="date" id="moving-date" name="moving-date">
+    
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </section>
+    
+    <script>
+        function toggleLocationFields() {
+            var service = document.getElementById("service").value;
+            var movingFrom = document.getElementById("moving-from");
+            var movingTo = document.getElementById("moving-to");
+            var movingDate = document.getElementById("moving-date");
+    
+            // Reset fields to be non-mandatory
+            movingFrom.required = false;
+            movingTo.required = false;
+            movingDate.required = false;
+    
+            // Show/hide labels and make required based on the service selected
+            if (service === "Household Move" || service === "Corporate/Office Move") {
+                movingFrom.required = true;
+                movingTo.required = true;
+                movingDate.required = true;
+                document.getElementById("moving-from-label").style.display = "block";
+                document.getElementById("moving-to-label").style.display = "block";
+                document.getElementById("moving-date-label").style.display = "block";
+            } else {
+                document.getElementById("moving-from-label").style.display = "none";
+                document.getElementById("moving-to-label").style.display = "none";
+                document.getElementById("moving-date-label").style.display = "none";
+            }
+        }
+    </script>
+    
+    
+    <footer>
+        <div class="footer-container">
+            <!-- First Section: Logo & Tagline -->
+            <div class="footer-section">
+                <img src="Images/MILAN_LOGO Transparent.png" alt="Milan Movers Logo" class="footer-logo" loading="lazy">
+                <p class="footer-description">
+                    Milan Movers & Logistics is dedicated to providing fast, reliable, and secure moving services. Whether you're relocating locally or internationally, our team ensures a smooth, hassle-free experience. From home to office moves, we manage everything with precision and care.
+                </p>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <!-- Second Section: Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Third Section: Contact Details -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Location: Embu, Kenya</li>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:info@milanmovers.co.ke">info@milanmovers.co.ke</a></li>
+                    <li><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+254795001646">+254 795 001 646</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <footer>
+        <p>&copy; 2024 Milan Movers & Logistics. All rights reserved.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
